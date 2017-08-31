@@ -98,6 +98,7 @@ function imageTrans2Canvas(imageURL, newCanvasId, sx, sy, width, height) {
 		var bottomBarATag = document.getElementById("download");
 		bottomBarATag.download = url;
 		bottomBarATag.href = url;
+		document.write("<img src='"+url+"' alt='from canvas'/>"); 
 	}
 }
 function createNewCanvas(sx, sy, width, height) {
